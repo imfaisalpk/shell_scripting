@@ -1,4 +1,4 @@
-# /bin/sh
+#!/bin/sh
 # message="Hello, Pakistan";
 # newMessage=$message;
 # echo "Message: $newMessage"
@@ -48,19 +48,56 @@
 
 
 # ERROR
-read -p "yes or no: " yn
+# read -p "yes or no: " yn
 
-if [[ "x$yn" = 'xy' ]];then
-    echo "yes!"
-else 
-    echo "NO."
-fi
+# if [[ "x$yn" = 'xy' ]];then
+#     echo "yes!"
+# else 
+#     echo "NO."
+# fi
 
 # if test 2 = 5 ; then
 #     echo "yes"
 # else
 #     echo "No"
 # fi
+
+# CASES
+
+# read -p "Enter your name: " name
+
+# case $name in 
+#     "mfaisal"|"faisal") echo "You are a good guy!"
+#     ;;
+
+#     "ali"|"amad") echo "Not that good!"
+#     ;;
+#     *) echo "I dont jnow about that!"
+#     ;;
+# esac
+
+# ITERATIVE STRUCTURES
+
+# read -p "Enter number of directories you want: " numDir
+# while [[ $numDir > 0 ]] 
+# do
+#     read -p "Directory Name$numDir: " dirName
+#     mkdir $dirName
+#     if [[ $? != 0 ]]; then
+#         echo "Directory Creation Failed!"
+#     fi
+#     (( --numDir ))
+# done
+
+
+read -p "Define Iterations: " iterations
+
+for $nume in {1 .. $iterations}
+do  
+    echo "iteration# $nume"
+done
+
+
 
 
 
