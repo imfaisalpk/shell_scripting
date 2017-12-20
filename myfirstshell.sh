@@ -48,13 +48,13 @@
 
 
 # ERROR
-# read -p "yes or no: " yn
+read -p "yes or no: " yn
 
-# if [[ "x$yn" = 'xy']];then
-#     echo "yes!"
-# else 
-#     echo "NO."
-# fi
+if [[ "x$yn" = 'xy' ]];then
+    echo "yes!"
+else 
+    echo "NO."
+fi
 
 # if test 2 = 5 ; then
 #     echo "yes"
