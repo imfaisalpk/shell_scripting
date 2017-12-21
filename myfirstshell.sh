@@ -1,4 +1,5 @@
 #!/bin/sh
+
 # message="Hello, Pakistan";
 # newMessage=$message;
 # echo "Message: $newMessage"
@@ -90,17 +91,38 @@
 # done
 
 
-read -p "Define Iterations: " iterations
+# read -p "Define Iterations: " iterations
 
-for $nume in {1 .. $iterations}
-do  
-    echo "iteration# $nume"
+# for nume in `seq 1 $iterations`
+# do  
+#     echo "iteration# $nume"
+# done
+
+# dialog --backtitle "Package configuration" \
+#        --title "Configuration sun-java-jre" \
+#        --yesno "\nBla bla bla...\n\nDo you accept?" 10 30
+
+# read -p "Enter a number: " number
+# until [[ $number > 0 ]]
+# do
+#     echo "number#$number";
+#     ((-- number))
+# done
+
+a=0
+
+until [ ! $a -le 10 ]
+do
+   echo $a
+   a=$(( a+1 ))
 done
 
-
-
-
-
+# i=1
+# until [ $i -gt 6 ]
+# do
+# 	echo "Welcome $i times."
+# 	i=$(( i+1 ))
+# done
 
 
 
