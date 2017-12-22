@@ -109,13 +109,13 @@
 #     ((-- number))
 # done
 
-a=0
+# a=0
 
-until [ ! $a -le 10 ]
-do
-   echo $a
-   a=$(( a+1 ))
-done
+# until [ ! $a -le 10 ]
+# do
+#    echo $a
+#    a=$(( a+1 ))
+# done
 
 # i=1
 # until [ $i -gt 6 ]
@@ -124,9 +124,16 @@ done
 # 	i=$(( i+1 ))
 # done
 
+# num=0
+# num=$((num+1))
+# echo $num
 
+# Addition(){
+#     result=$(($1+$2))
+# }
 
-
-
+# read -p "Enter number a and b: " a b
+# Addition a b
+# echo $result
 
 
